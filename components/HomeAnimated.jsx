@@ -12,7 +12,7 @@ const HomeAnimated = () => {
               </div>
               <div className="overflow-hidden font-clash text-7xl font-medium">
                 <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal group-hover:animation-delay-300 text-white">
-                  I'm Lord Zeus.
+                  I&apos;m Lord Zeus.
                 </div>
               </div>
             </div>
@@ -22,7 +22,7 @@ const HomeAnimated = () => {
             <div>
               <div className="overflow-hidden font-clash text-7xl font-medium">
                 <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal text-white">
-                  Happen's to be a
+                  Happen&apos;s to be a
                 </div>
               </div>
               <div className="overflow-hidden font-clash text-7xl font-medium">
@@ -37,7 +37,7 @@ const HomeAnimated = () => {
             <div>
               <div className="overflow-hidden font-clash text-7xl font-medium">
                 <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal text-white">
-                  A Weekend's And
+                  A Weekend&apos;s And
                 </div>
               </div>
               <div className="overflow-hidden font-clash text-7xl font-medium">
