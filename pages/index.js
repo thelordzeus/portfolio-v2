@@ -37,7 +37,7 @@ export default function Home() {
           <>
             <HomeAnimated />
             <Hero />
-            <Skills />
+            
           </>
         )}
       </main>

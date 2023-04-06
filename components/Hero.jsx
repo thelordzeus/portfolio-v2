@@ -1,7 +1,8 @@
+import Skills from "@/components/skills/Skills";
 const Hero = () => {
   return (
     <>
-      <div className="bg-blackGradient2 py-24 sm:py-32">
+      <div className="bg-blackGradient2 py-20 sm:py-32">
         <div className="h-[5rem]"></div>
 
         <div className="mx-auto flex max-w-5xl flex-col items-start gap-10 px-6 md:flex-row lg:px-8">
@@ -133,7 +134,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="h-[50rem]"></div>
+        <div className=" h-screen mt-10">
+          <Skills />
+        </div>
       </div>
     </>
   );
