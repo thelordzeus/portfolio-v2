@@ -1,9 +1,10 @@
+"use client"
 import anime from "animejs";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const LoadingScreen = ({ finishLoading }) => {
-  const [isMounted, setisMounted] = useState(false);
+  const [ismounted, setismounted] = useState(false);
 
   const animate = () => {
     const loader = anime.timeline({
@@ -19,15 +20,16 @@ const LoadingScreen = ({ finishLoading }) => {
   };
 
   useEffect(() => {
-    const timeout = setTimeout(() => setisMounted(true), 10);
+    const timeout = setTimeout(() => setismounted(true), 10);
     animate();
     return () => clearTimeout(timeout);
   }, []);
+  
   return (
     <>
       <div
         className="flex h-screen items-center justify-center bg-black"
-        isMounted={isMounted}
+        ismounted={ismounted}
       >
         <Image
           id="logo"

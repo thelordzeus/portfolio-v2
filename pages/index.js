@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
+import Skills from "@/components/skills/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function Home() {
           <>
             <HomeAnimated />
             <Hero />
+            <Skills />
           </>
         )}
       </main>

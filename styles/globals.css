@@ -42,3 +42,75 @@
   width: 100%;
   height: 100%;
 }
+
+.Skills-container {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.skills1 {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 5vw;
+}
+.skills2 {
+  font-size: 35px;
+  font-weight: 900;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 70vw;
+}
+video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4vh;
+  font-size: 30px;
+  color: #fff;
+}
+
+.Skills-marquee1 {
+  font-size: 148px;
+  font-family: "Stretch Pro";
+}
+.Skills-marquee2 {
+  font-size: 148px;
+  font-family: "Stretch Pro";
+}
+
+@media only screen and (max-width: 450px) {
+  .Landing-hero-content {
+    font-size: 150px;
+  }
+  .skills1 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Roboto Mono", monospace;
+    margin-left: 5vw;
+  }
+  .skills2 {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "Roboto Mono", monospace;
+    margin-left: 48vw;
+  }
+  .Skills-marquee1 {
+    font-size: 80px;
+    font-family: "Stretch Pro";
+  }
+  .Skills-marquee2 {
+    font-size: 80px;
+    font-family: "Stretch Pro";
+  }
+  .Skills-container {
+    height: 80vh;
+  }
+}
