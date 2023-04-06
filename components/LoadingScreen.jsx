@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import anime from "animejs";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -24,7 +24,7 @@ const LoadingScreen = ({ finishLoading }) => {
     animate();
     return () => clearTimeout(timeout);
   }, []);
-  
+
   return (
     <>
       <div
@@ -39,7 +39,7 @@ const LoadingScreen = ({ finishLoading }) => {
           height={200}
         />
         <h1 className="font-clash text-7xl font-medium text-white ">
-          "First We Vibe
+          First We Vibe
         </h1>
       </div>
     </>
