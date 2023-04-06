@@ -17,7 +17,8 @@ module.exports = {
       },
       backgroundImage: {
         starFace: "url('../assets/starface.jpg')",
-        nightLife: "url('../assets/nightlife.jpg')",
+        greenGradient: "url('../assets/gradient.jpg')",
+        nightLife: "url('../assets/nightlife.mp4')",
       },
 
       animation: {

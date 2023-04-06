@@ -18,15 +18,15 @@ const HomeAnimated = () => {
             </div>
           </div>
 
-          <div className="group flex h-screen snap-start snap-always items-center justify-center bg-green-500 bg-opacity-10">
+          <div className="group flex h-screen snap-start snap-always items-center justify-center bg-greenGradient">
             <div>
               <div className="overflow-hidden font-clash text-7xl font-medium">
-                <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal">
+                <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal text-white">
                   I'm a Full Stack Developer.
                 </div>
               </div>
               <div className="overflow-hidden font-clash text-7xl font-medium">
-                <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal group-hover:animation-delay-300">
+                <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal group-hover:animation-delay-300 text-white">
                   Anything
                 </div>
               </div>
