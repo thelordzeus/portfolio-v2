@@ -18,6 +18,8 @@ module.exports = {
       backgroundImage: {
         starFace: "url('../assets/starface.jpg')",
         greenGradient: "url('../assets/gradient.jpg')",
+        blackGradient1: "url('../assets/gradient1.png')",
+        blackGradient2: "url('../assets/gradient-2.png')",
         nightLife: "url('../assets/nightlife.mp4')",
       },
 
