@@ -3,10 +3,11 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 
 import HomeAnimated from "@/components/HomeAnimated";
-import Projects from "@/components/Projects";
+
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
+import Experience from "@/components/Experience";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,7 @@ export default function Home() {
         ) : (
           <>
             <HomeAnimated />
-            <Projects />
+            <Experience />
           </>
         )}
       </main>
