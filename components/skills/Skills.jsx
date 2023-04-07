@@ -41,7 +41,7 @@ function Skills() {
           whileInView={{ opacity: 1 }}
           className="skills2 font-clash"
         >
-          LET&apos;S ABOUT SKILLS.
+          LET&apos;S TALK ABOUT SKILLS.
         </motion.div>
       </div>
     </motion.div>
