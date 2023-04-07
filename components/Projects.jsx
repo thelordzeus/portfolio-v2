@@ -56,7 +56,7 @@ const Projects = () => {
           </div>
           <div className="mt-5 w-full min-w-0 flex-1 md:mt-0">
             <dl className="grid grid-cols-1 gap-y-10 gap-x-8 md:max-w-xl lg:max-w-none lg:gap-y-16">
-              {Project.map((project) => (
+              {Project.map((project, key) => (
                 <div
                   className="relative rounded-lg bg-gray-50 p-10"
                   key={project.key}
