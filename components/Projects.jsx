@@ -20,14 +20,13 @@ const Projects = () => {
     },
     {
       title: "Content-Gen",
-      body: "ContentGen is a chatGPT powered website that makes it easy for users to generate professional-quality LinkedIn posts with just a few clicks. The site features a special prompt that is engineered specifically for the structure of LinkedIn posts, making it easy for users to create high-quality content that is tailored to the platform. With ContentGen, users simply need to enter a post title, and the site will generate a polished post that is ready to be shared on LinkedIn. Whether you're a professional looking to share your expertise or a business looking to promote your products and services, ContentGen is the perfect tool for creating engaging and effective LinkedIn posts.",
-      tech: "React.JS, Tailwind CSS, Vercel, Web3, Solidity",
+      body: "ContentGen is a chatGPT powered website that makes it easy for users to generate professional-quality LinkedIn posts with just a few clicks. The site features a special prompt that is engineered specifically for the structure of LinkedIn posts, making it easy for users to create high-quality content that is tailored to the platform. With ContentGen, users simply need to enter a post title, and the site will generate a polished post that is ready to be shared on LinkedIn. Whether you&apos;re a professional looking to share your expertise or a business looking to promote your products and services, ContentGen is the perfect tool for creating engaging and effective LinkedIn posts.",
+
       link: "https://content-gen.vercel.app/",
     },
     {
       title: "Bhai Sun",
-      body: "Bhai Sunn is an innovative app that combines the power of ChatSonic API and Twilio WhatsApp Bot SDK to bring the advanced language capabilities of ChatGPT to WhatsApp. This app makes it easy to access the natural language processing and conversation skills of ChatGPT directly from your WhatsApp chats. Whether you're looking to get quick answers to questions, automate routine tasks, or just have a conversation with an AI, Bhai Sunn is the app for you. With Bhai Sunn, you can enjoy the benefits of a virtual assistant that is always available, 24/7. Download now and experience the future of messaging.",
-      tech: "Replit, Twilio, ChatGPT",
+      body: "Bhai Sunn is an innovative app that combines the power of ChatSonic API and Twilio WhatsApp Bot SDK to bring the advanced language capabilities of ChatGPT to WhatsApp. This app makes it easy to access the natural language processing and conversation skills of ChatGPT directly from your WhatsApp chats. Whether you&apos;re looking to get quick answers to questions, automate routine tasks, or just have a conversation with an AI, Bhai Sunn is the app for you. With Bhai Sunn, you can enjoy the benefits of a virtual assistant that is always available, 24/7. Download now and experience the future of messaging.",
     },
   ];
   return (
