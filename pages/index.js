@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
 import Experience from "@/components/Experience";
+import Blogs from "@/components/Blogs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function Home() {
           <>
             <HomeAnimated />
             <Experience />
+            <Blogs />
           </>
         )}
       </main>
