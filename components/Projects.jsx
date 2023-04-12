@@ -1,4 +1,5 @@
 import Skills from "@/components/skills/Skills";
+import Blogs from "@/components/Blogs";
 import { BiLinkExternal } from "react-icons/bi";
 
 const Projects = () => {
@@ -80,6 +81,7 @@ const Projects = () => {
         </div>
 
         <div className=" h-screen mt-10">
+          <Blogs />
           <Skills />
         </div>
       </div>
