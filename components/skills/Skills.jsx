@@ -13,7 +13,7 @@ function Skills() {
       transition={{ duration: 0.75, ease: "easeOut" }}
       className="Skills-container"
     >
-      <div className="skills-content bg-nightLife bg-cover ">
+      <div className="skills-content bg-nightLife bg-cover font-clash">
         <motion.div
           transition={{ duration: 0.5, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
@@ -26,22 +26,22 @@ function Skills() {
           gradient={false}
           className="Skills-marquee1 font-clash"
         >
-          GIT BOOTSTRAP SASS TAILWIND HTML CSS REACTJS
+          GIT BOOTSTRAP SASS TAILWIND HTML CSS REACTJS JAVASCRIPT TYPESCRIPT
         </Marquee>
         <Marquee
           gradient={false}
           speed={140}
           className="Skills-marquee2 font-clash"
         >
-          AUDIO VIDEO CONTENT CREATION MARKETING&
+          NEXT.JS BOOTSTRAP REDUX SANITY PYTHON FIREBASE SOLIDITY NODE.JS
         </Marquee>
         <motion.div
           transition={{ duration: 0.5, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="skills2 font-clash"
+          className="skills2  ml-5"
         >
-          LET&apos;S TALK ABOUT SKILLS.
+          LET&apos;S TALK SKILLS.
         </motion.div>
       </div>
     </motion.div>
