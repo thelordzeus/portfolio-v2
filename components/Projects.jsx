@@ -45,7 +45,7 @@ const Projects = () => {
             <h2 className="text-lg font-semibold leading-8 tracking-tight text-gray-500">
               Eat . Sleep . Code . Repeat
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-green-500 to-green-200 inline-block text-transparent bg-clip-text sm:text-4xl">
               Projects which I&apos;m really proud of.
             </p>
             <p className="mt-6 mb-2 text-base leading-7 text-gray-400">
