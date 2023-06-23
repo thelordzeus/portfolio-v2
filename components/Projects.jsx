@@ -2,40 +2,25 @@ import Skills from "@/components/skills/Skills";
 import Blogs from "@/components/Blogs";
 import { BiLinkExternal } from "react-icons/bi";
 import Albums from "./albums/Albums";
+import { useEffect, useState } from "react";
+import { getProjects } from "@/sanity/utils/fetchData";
+import { PortableText } from "@portabletext/react";
 
 const Projects = () => {
-  const Project = [
-    {
-      key: 1,
-      title: "AssignDesk",
-      body: "AssignDesk is an assignment manager app designed specifically for students. With AssignDesk, students can keep track of all their scheduled assignments in one convenient place. The app allows students to schedule and prioritize their assignments, so they can stay organized and on top of their workload.",
-      link: "https://assign-desk.vercel.app/",
-    },
-    {
-      key: 2,
-      title: "Buildspace-bounties",
-      body: "Won the buildspace bounties tournament and received a prize pool of $200 dollars. In this project we were assigned to create a landing page for their bounties section.",
-      link: "https://buildspace-bounty.vercel.app/",
-    },
-    {
-      key: 3,
-      title: "Altruize",
-      body: "A web3-based NGO donations app has several advantages over a web2-based app. Web3 technology, which is built on blockchain, enables secure and transparent transactions, with no need for intermediaries like banks or payment processors. This means that donors can have complete control over their donations, without worrying about fraud or misuse of funds.",
-      link: "https://altruize.vercel.app/",
-    },
-    {
-      key: 4,
-      title: "Content-Gen",
-      body: "ContentGen is a chatGPT powered website that makes it easy for users to generate professional-quality LinkedIn posts with just a few clicks. The site features a special prompt that is engineered specifically for the structure of LinkedIn posts, making it easy for users to create high-quality content that is tailored to the platform. With ContentGen, users simply need to enter a post title, and the site will generate a polished post that is ready to be shared on LinkedIn. Whether you&apos;re a professional looking to share your expertise or a business looking to promote your products and services, ContentGen is the perfect tool for creating engaging and effective LinkedIn posts.",
+  const [project, setProject] = useState([]);
 
-      link: "https://content-gen.vercel.app/",
-    },
-    {
-      key: 5,
-      title: "Bhai Sun",
-      body: "Bhai Sunn is an innovative app that combines the power of ChatSonic API and Twilio WhatsApp Bot SDK to bring the advanced language capabilities of ChatGPT to WhatsApp. This app makes it easy to access the natural language processing and conversation skills of ChatGPT directly from your WhatsApp chats. Whether you&apos;re looking to get quick answers to questions, automate routine tasks, or just have a conversation with an AI, Bhai Sunn is the app for you. With Bhai Sunn, you can enjoy the benefits of a virtual assistant that is always available, 24/7. Download now and experience the future of messaging.",
-    },
-  ];
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const projects = await getProjects();
+        setProject(projects);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
       <div className="bg-blackGradient2 py-20 sm:py-32">
@@ -58,12 +43,12 @@ const Projects = () => {
           </div>
           <div className="mt-5 w-full min-w-0 flex-1 md:mt-0">
             <dl className="grid grid-cols-1 gap-y-10 gap-x-8 md:max-w-xl lg:max-w-none lg:gap-y-16">
-              {Project.map((project, key) => (
+              {project.map((project, key) => (
                 <div
                   className="relative rounded-lg bg-gray-50 p-10"
-                  key={project.key}
+                  key={project._id}
                 >
-                  <a href={project.link} target="_blank">
+                  <a href={project.url} target="_blank">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-black">
                       <BiLinkExternal className="text-white h-6 w-6" />
                     </div>
@@ -72,8 +57,8 @@ const Projects = () => {
                   <dt className="mt-4 text-lg font-semibold leading-7 text-gray-900">
                     {project.title}
                   </dt>
-                  <dd className="mt-2 text-base leading-7 text-gray-600">
-                    {project.body}
+                  <dd className="mt-2 text-base leading-7 text-gray-600 prose">
+                    <PortableText value={project.content} />
                   </dd>
                 </div>
               ))}
