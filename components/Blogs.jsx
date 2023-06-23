@@ -5,7 +5,7 @@ export default function Blogs() {
     <div className="bg-blackGradient2 bg-cover mt-36">
       <div className="max-w-5xl mx-auto items-start px-6 md:flex-row mb-5">
         <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Yes I also write sometimes.
+          Yes I read, but my books are a little bit different.
         </p>
       </div>
       <div className="columns-3 gap-8 p-5">

@@ -25,6 +25,7 @@ module.exports = {
 
       animation: {
         reveal: "reveal 0.8s forwards",
+        marquee: "marquee 50s linear infinite",
       },
       keyframes: {
         reveal: {
@@ -33,6 +34,14 @@ module.exports = {
           },
           "100%": {
             transform: "translatey(0)",
+          },
+        },
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - 2.5rem))",
           },
         },
       },
